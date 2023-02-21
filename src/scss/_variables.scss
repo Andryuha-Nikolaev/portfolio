@@ -10,7 +10,4 @@ $background: linear-gradient(
 ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 $gray-line: #f6f6f6;
 $orange: #fe5f1e;
-
-$container-width: 90%;
-
-$duration: 0.15s;
+$transition: transform 0.75s cubic-bezier(0.075, 0.5, 0, 1);

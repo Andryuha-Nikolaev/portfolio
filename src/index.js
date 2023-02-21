@@ -1,12 +1,18 @@
 import './index.html';
 import './scss/index.scss';
-import { mult } from './modules/main';
+import gsap from './libs/gsap/gsap.min.js';
+import ScrollTrigger from './libs/gsap/ScrollTrigger.min.js';
+import ScrollSmoother from './libs/gsap/ScrollSmoother.min.js';
 
 // parallax
-document.addEventListener('scroll', function () {
-  // document.body.style.cssText = `--scrollTop: ${this.scrollY}px`;
-  console.log(window.scrollY);
+document.addEventListener('scroll', () => {
   document.body.style.setProperty('--scrollTop', `${window.scrollY}px`);
+});
+
+gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+ScrollSmoother.create({
+  wrapper: '.wrapper',
+  content: '.content',
 });
 
 // window.addEventListener('scroll', function () {

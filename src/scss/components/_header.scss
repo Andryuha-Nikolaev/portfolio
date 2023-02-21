@@ -19,6 +19,7 @@
     font-weight: 900;
     color: $gold;
     text-shadow: 0 0 15px $textShadow;
+    transition: $transition;
   }
 
   &__subtitle {
@@ -42,6 +43,7 @@
     background-position: center;
     will-change: transform;
     z-index: 2;
+    transition: $transition;
   }
 
   &__layer-base {
@@ -60,4 +62,17 @@
     background-image: url(../../assets/img/layer-front.png);
     transform: translate3d(0, calc(var(--scrollTop) / 5.7), 0);
   }
+}
+
+.header::after {
+  content: '';
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  height: calc(var(--index) * 10);
+  background-image: url(../../assets/img/ground.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  bottom: calc(var(--index) * -4.5);
 }
