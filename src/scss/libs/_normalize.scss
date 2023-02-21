@@ -3,7 +3,6 @@
   margin: 0;
   list-style: none;
   outline: none;
-  font-family: 'Inter', Arial, sans-serif;
   box-sizing: border-box;
 }
 
@@ -27,18 +26,18 @@ h2,
 h3,
 h4,
 h5 {
-  color: $black;
+  // color: $white;
 }
 
-h1 {
-  font-size: 48px;
-}
+// h1 {
+//   font-size: 48px;
+// }
 
-h2 {
-  font-weight: 600;
-  font-size: 28px;
-  line-height: 30px;
-}
+// h2 {
+//   font-weight: 600;
+//   font-size: 28px;
+//   line-height: 30px;
+// }
 
 a {
   text-decoration: none;
