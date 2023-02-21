@@ -1,0 +1,11 @@
+// @import '../variables';
+
+.header {
+  border-bottom: 1px solid $gray-line;
+  padding: 20px 0;
+
+  &__title {
+    font-size: 50px;
+    text-align: center;
+  }
+}

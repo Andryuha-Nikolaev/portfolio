@@ -1,0 +1,43 @@
+.filter {
+  display: flex;
+  align-items: center;
+  // background: #fff;
+  padding: 10px 0;
+  justify-content: flex-end;
+}
+
+.filter__button {
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e6d7bd;
+  transition: 0.3s;
+  margin: 0px 6.5px;
+}
+
+.filter__button:hover {
+  cursor: pointer;
+  background-color: #f3f3f3;
+}
+
+.filter__button_type_grid {
+  background-image: url('https://code.s3.yandex.net/web-code/oop/type2.png');
+  -webkit-background-size: 18px;
+  background-size: 18px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.filter__button_type_column {
+  background-image: url('https://code.s3.yandex.net/web-code/oop/type1.png');
+  background-position: center;
+  -webkit-background-size: 20px 16px;
+  background-size: 20px 16px;
+  background-repeat: no-repeat;
+}
+
+.active {
+  background-color: #f3f3f3;
+}
