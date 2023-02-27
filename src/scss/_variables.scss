@@ -1,13 +1,12 @@
-// $black: #232323;
 $black: #010101;
 $white: #ffffff;
+$gray: #f6f6f6;
 $gold: #e7e7e0;
-$textShadow: #9d822b;
-$background: linear-gradient(
-  90deg,
-  #a1d3b5,
-  #efdeba
-); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-$gray-line: #f6f6f6;
-$orange: #fe5f1e;
+$lightBlue: #6b8693;
+$blue: #2d4b5d;
+$darkBlue: #1d282f;
+$textShadow: #c6c29b;
+
+$index: calc(1vw + 1vh);
+
 $transition: transform 0.75s cubic-bezier(0.075, 0.5, 0, 1);
