@@ -1,0 +1,6 @@
+@mixin textOptions($font-weight, $font-size, $line-height, $letter-spacing) {
+  font-weight: $font-weight;
+  font-size: calc($index * $font-size);
+  line-height: calc($index * $line-height);
+  letter-spacing: calc($index / $letter-spacing);
+}

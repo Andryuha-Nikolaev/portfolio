@@ -17,22 +17,17 @@
     transform: translate3d(0, calc(var(--scrollTop) / 2), 0);
     will-change: transform;
     text-transform: uppercase;
-    text-shadow: 0 0 12px $textShadow;
     transition: $transition;
   }
 
   &__subtitle {
-    font-weight: 500;
-    font-size: calc($index * 2);
-    line-height: calc($index * 2.5);
-    letter-spacing: calc(var(--index) / 5);
+    @include textOptions(500, 2, 2.5, 5);
+    text-shadow: 0 0 12px $textShadow;
   }
 
   &__title {
-    font-weight: 500;
-    font-size: calc($index * 2);
-    line-height: calc($index * 2.5);
-    letter-spacing: calc(var(--index) / 5);
+    @include textOptions(500, 2, 2.5, 5);
+    text-shadow: 0 0 12px $textShadow;
   }
 
   &__layer {
