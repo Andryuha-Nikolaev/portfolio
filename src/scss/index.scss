@@ -2,26 +2,15 @@
 @import './mixins';
 
 @import './libs/normalize';
-@import '../fonts/raleway.css';
 @import '../fonts/inter.css';
 
 @import './components/all';
-
-:root {
-  --index: calc(1vw + 1vh);
-}
 
 body {
   background-color: $black;
   color: $white;
   line-height: 1.55;
   font-family: 'Inter', Arial, sans-serif;
-}
-
-.wrapper {
-  // height: 100%;
-  // margin: 0px auto;
-  // max-width: 1440px;
 }
 
 .content {
