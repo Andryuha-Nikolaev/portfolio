@@ -13,21 +13,34 @@
 
   &__title-container {
     z-index: 4;
-    padding: 0 20px;
+    // padding: 0 20px;
+    padding: 0 6vw;
     transform: translate3d(0, calc(var(--scrollTop) / 2), 0);
     will-change: transform;
     text-transform: uppercase;
     transition: $transition;
+
+    @media screen and (max-width: 576px) {
+      padding: 0 10px;
+    }
   }
 
   &__subtitle {
     @include textOptions(500, 2, 2.5, 5);
     // text-shadow: 0 0 12px $textShadow;
+    @media screen and (max-width: 1023px) {
+      @include textOptions(500, 2.4, 2.9, 5);
+      // @include textOptionsMobile(500, 28px, 34px, 2px);
+    }
   }
 
   &__title {
     @include textOptions(500, 2, 2.5, 5);
     // text-shadow: 0 0 12px $textShadow;
+    @media screen and (max-width: 1023px) {
+      @include textOptions(500, 2.4, 2.9, 5);
+      // @include textOptionsMobile(500, 28px, 34px, 2px);
+    }
   }
 
   &__layer {

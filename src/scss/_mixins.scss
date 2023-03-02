@@ -4,3 +4,10 @@
   line-height: calc($index * $line-height);
   letter-spacing: calc($index / $letter-spacing);
 }
+
+@mixin textOptionsMobile($font-weight, $font-size, $line-height, $letter-spacing) {
+  font-weight: $font-weight;
+  font-size: $font-size;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+}

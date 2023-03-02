@@ -1,13 +1,14 @@
 .work {
   margin: 0 auto;
   max-width: 2180px;
-  padding: 70px 100px;
+  padding: 70px 6vw;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  @media screen and (max-width: 767px) {
-    padding: 50px 10px;
+
+  @media screen and (max-width: 576px) {
+    padding: 70px 10px;
   }
 
   &__title {
@@ -15,6 +16,9 @@
     @include textOptions(500, 1.6, 2.1, 6);
     // text-shadow: 0 0 12px $textShadow;
     margin-bottom: calc($index * 1.2);
+    @media screen and (max-width: 1023px) {
+      @include textOptions(500, 2, 3.2, 5);
+    }
   }
 
   &__list {
@@ -23,24 +27,30 @@
     // grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-template-columns: repeat(2, 1fr);
     gap: 60px 40px;
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 1023px) {
       grid-template-columns: repeat(1, 1fr);
     }
   }
 
   &__card-title {
-    @include textOptions(400, 1.1, 2.1, 50);
+    @include textOptions(400, 1.1, 2.1, 30);
+    @media screen and (max-width: 1023px) {
+      @include textOptions(400, 1.6, 2.6, 30);
+    }
   }
 
   &__card-img-container {
     display: flex;
 
     overflow: hidden;
-    &:hover .work__card-img {
-      opacity: 1;
-    }
-    &:hover .work__card-img_hover {
-      transform: translate3d(0, 0, 0);
+
+    @media screen and (min-width: 1024px) {
+      &:hover .work__card-img {
+        opacity: 1;
+      }
+      &:hover .work__card-img_hover {
+        transform: translate3d(0, 0, 0);
+      }
     }
   }
 
@@ -82,14 +92,20 @@
   &__card-link {
     display: block;
     background-color: $darkBlue;
-    @include textOptions(400, 1, 1.2, 50);
+    @include textOptions(400, 1, 1.2, 30);
     border-radius: 7px;
     padding: 5px 8px;
     color: $white;
     transition: background-color 0.3s linear;
 
-    &:hover {
-      background-color: $lightBlue;
+    @media screen and (max-width: 1023px) {
+      @include textOptions(400, 1.5, 1.7, 30);
+    }
+
+    @media screen and (min-width: 1024px) {
+      &:hover {
+        background-color: $lightBlue;
+      }
     }
   }
 }
