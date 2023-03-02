@@ -54,19 +54,19 @@
   }
 
   &__layer-base {
-    background-image: url(../../assets/img/layer-base.svg);
+    background-image: url(../../assets/img/layer-base-min.svg);
     transform: translate3d(0, calc(var(--scrollTop) / 1.6), 0);
     z-index: 0;
   }
 
   &__layer-middle {
-    background-image: url(../../assets/img/layer-middle.svg);
+    background-image: url(../../assets/img/layer-middle-min.svg);
     transform: translate3d(0, calc(var(--scrollTop) / 2.5), 0);
     z-index: 3;
   }
 
   &__layer-front {
-    background-image: url(../../assets/img/layer-front.svg);
+    background-image: url(../../assets/img/layer-front-min.svg);
     transform: translate3d(0, calc(var(--scrollTop) / 5.7), 0);
     z-index: 5;
   }
