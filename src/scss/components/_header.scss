@@ -26,20 +26,25 @@
   }
 
   &__subtitle {
-    @include textOptions(500, 2, 2.5, 5);
-    // text-shadow: 0 0 12px $textShadow;
+    @include textOptionsBig(500, 88px, 102px, 5px);
+
+    @media screen and (max-width: 2560px) {
+      @include textOptions(500, 2, 2.5, 7);
+    }
     @media screen and (max-width: 1023px) {
-      @include textOptions(500, 2.4, 2.9, 5);
-      // @include textOptionsMobile(500, 28px, 34px, 2px);
+      @include textOptions(500, 2.4, 2.9, 7);
     }
   }
 
   &__title {
-    @include textOptions(500, 2, 2.5, 5);
-    // text-shadow: 0 0 12px $textShadow;
+    @include textOptionsBig(500, 88px, 102px, 5px);
+
+    @media screen and (max-width: 2560px) {
+      @include textOptions(500, 2, 2.5, 7);
+    }
+
     @media screen and (max-width: 1023px) {
-      @include textOptions(500, 2.4, 2.9, 5);
-      // @include textOptionsMobile(500, 28px, 34px, 2px);
+      @include textOptions(500, 2.4, 2.9, 7);
     }
   }
 

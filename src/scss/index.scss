@@ -2,6 +2,7 @@
 @import './mixins';
 
 @import './libs/normalize';
+@import '../fonts/roboto.css';
 @import '../fonts/inter.css';
 
 @import './components/all';
@@ -10,7 +11,7 @@ body {
   background-color: $black;
   color: $white;
   line-height: 1.55;
-  font-family: 'Inter', Arial, sans-serif;
+  font-family: 'Roboto', Arial, sans-serif;
 }
 
 .content {

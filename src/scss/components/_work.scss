@@ -13,11 +13,16 @@
 
   &__title {
     text-transform: uppercase;
-    @include textOptions(500, 1.6, 2.1, 6);
     // text-shadow: 0 0 12px $textShadow;
     margin-bottom: calc($index * 1.2);
+    @include textOptionsBig(500, 64px, 68px, 4px);
+
+    @media screen and (max-width: 2560px) {
+      @include textOptions(500, 1.6, 2.1, 7);
+    }
+
     @media screen and (max-width: 1023px) {
-      @include textOptions(500, 2, 3.2, 5);
+      @include textOptions(500, 2, 3.2, 7);
     }
   }
 
@@ -33,7 +38,12 @@
   }
 
   &__card-title {
-    @include textOptions(400, 1.1, 2.1, 30);
+    @include textOptionsBig(400, 44px, 48px, 2px);
+
+    @media screen and (max-width: 2560px) {
+      @include textOptions(400, 1.1, 2.1, 30);
+    }
+
     @media screen and (max-width: 1023px) {
       @include textOptions(400, 1.6, 2.6, 30);
     }
@@ -92,11 +102,17 @@
   &__card-link {
     display: block;
     background-color: $darkBlue;
-    @include textOptions(400, 1, 1.2, 30);
+
     border-radius: 7px;
     padding: 5px 8px;
     color: $white;
     transition: background-color 0.3s linear;
+
+    @include textOptionsBig(400, 40px, 44px, 2px);
+
+    @media screen and (max-width: 2560px) {
+      @include textOptions(400, 1, 1.2, 30);
+    }
 
     @media screen and (max-width: 1023px) {
       @include textOptions(400, 1.5, 1.7, 30);
