@@ -1,0 +1,69 @@
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(fonts/Roboto-Regular.woff2) format('woff2'), url(fonts/Roboto-Regular.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(fonts/Roboto-Medium.woff2) format('woff2'), url(fonts/Roboto-Medium.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(fonts/Roboto-Bold.woff2) format('woff2'), url(fonts/Roboto-Bold.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(fonts/Roboto-Black.woff2) format('woff2'), url(fonts/Roboto-Black.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(fonts/Inter-Regular.woff2) format("woff2"),
+    url(fonts/Inter-Regular.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(fonts/Inter-Medium.woff2) format("woff2"),
+    url(fonts/Inter-Medium.woff) format("woff");
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(fonts/Inter-Bold.woff2) format("woff2"),
+    url(fonts/Inter-Bold.woff2) format("woff");
+}
+
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(fonts/Inter-Black.woff2) format("woff2"),
+    url(fonts/Inter-Black.woff) format("woff");
+}
+*{padding:0;margin:0;list-style:none;outline:none;box-sizing:border-box}html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased}a{text-decoration:none}.header{position:relative}.header__layers{min-height:100vh;display:flex;justify-content:center;align-items:center;text-align:center;overflow:hidden;position:relative}.header__title-container{z-index:4;padding:0 6vw;-webkit-transform:translate3d(0, calc(var(--scrollTop) / 2), 0);transform:translate3d(0, calc(var(--scrollTop) / 2), 0);will-change:transform;text-transform:uppercase;transition:-webkit-transform .75s cubic-bezier(0.075, 0.5, 0, 1);transition:transform .75s cubic-bezier(0.075, 0.5, 0, 1);transition:transform .75s cubic-bezier(0.075, 0.5, 0, 1), -webkit-transform .75s cubic-bezier(0.075, 0.5, 0, 1)}.header__subtitle{font-weight:500;font-size:88px;line-height:102px;letter-spacing:5px}.header__title{font-weight:500;font-size:88px;line-height:102px;letter-spacing:5px}.header__layer{height:100%;width:100%;position:absolute;background-size:cover;background-position:center;will-change:transform;transition:-webkit-transform .75s cubic-bezier(0.075, 0.5, 0, 1);transition:transform .75s cubic-bezier(0.075, 0.5, 0, 1);transition:transform .75s cubic-bezier(0.075, 0.5, 0, 1), -webkit-transform .75s cubic-bezier(0.075, 0.5, 0, 1)}.header__layer-base{background-image:url(assets/layer-base-min.svg);-webkit-transform:translate3d(0, calc(var(--scrollTop) / 1.6), 0);transform:translate3d(0, calc(var(--scrollTop) / 1.6), 0);z-index:0}.header__layer-middle{background-image:url(assets/layer-middle-min.svg);-webkit-transform:translate3d(0, calc(var(--scrollTop) / 2.5), 0);transform:translate3d(0, calc(var(--scrollTop) / 2.5), 0);z-index:3}.header__layer-front{background-image:url(assets/layer-front-min.svg);-webkit-transform:translate3d(0, calc(var(--scrollTop) / 5.7), 0);transform:translate3d(0, calc(var(--scrollTop) / 5.7), 0);z-index:5}.header::after{content:"";position:absolute;z-index:100;width:100%;height:10px;background-color:#010101;box-shadow:0px 0px 10px 10px #010101}.work{margin:0 auto;max-width:2180px;padding:70px 6vw;position:relative;display:flex;flex-direction:column;align-items:center}.work__title{text-transform:uppercase;margin-bottom:calc((1vw + 1vh)*1.2);font-weight:500;font-size:64px;line-height:68px;letter-spacing:4px}.work__list{width:100%;display:grid;grid-template-columns:repeat(2, 1fr);grid-gap:60px 40px;gap:60px 40px}.work__card-title{font-weight:400;font-size:44px;line-height:48px;letter-spacing:2px}.work__card-img-container{display:flex;overflow:hidden}.work__card-overlay{position:relative}.work__card-img{width:100%;aspect-ratio:1/.6;object-fit:cover;object-position:top;transition:-webkit-transform 1s cubic-bezier(0.3, 1, 0.2, 1);transition:transform 1s cubic-bezier(0.3, 1, 0.2, 1);transition:transform 1s cubic-bezier(0.3, 1, 0.2, 1), -webkit-transform 1s cubic-bezier(0.3, 1, 0.2, 1);border:1px solid #010101}.work__card-img_hover{position:absolute;top:0;left:0;z-index:3;border:none;-webkit-transform:translate3d(100%, 0, 0);transform:translate3d(100%, 0, 0);transition:-webkit-transform 1s cubic-bezier(0.3, 1, 0.2, 1);transition:transform 1s cubic-bezier(0.3, 1, 0.2, 1);transition:transform 1s cubic-bezier(0.3, 1, 0.2, 1), -webkit-transform 1s cubic-bezier(0.3, 1, 0.2, 1)}.work__card-container{display:flex;justify-content:space-between;align-items:center;padding:1px}.work__link-container{display:flex;gap:7px}.work__card-link{display:block;background-color:#1d282f;border-radius:7px;padding:5px 8px;color:#fff;transition:background-color .3s linear;font-weight:400;font-size:40px;line-height:44px;letter-spacing:2px}.footer{margin:0 auto;max-width:2180px;padding:70px 6vw;position:relative;display:flex;justify-content:space-between;gap:20px}.footer__title{font-weight:400;font-size:38px;line-height:42px;letter-spacing:2px}.footer__info{color:#6b8693;font-weight:400;font-size:38px;line-height:42px;letter-spacing:2px}body{background-color:#010101;color:#fff;line-height:1.55;font-family:"Roboto","Inter",Arial,sans-serif}.content{will-change:transform}@media screen and (min-width: 1024px){.work__card-img-container:hover .work__card-img{opacity:1}.work__card-img-container:hover .work__card-img_hover{-webkit-transform:translate3d(0, 0, 0);transform:translate3d(0, 0, 0)}.work__card-link:hover{background-color:#6b8693}}@media screen and (max-width: 576px){.header__title-container{padding:0 10px}.work{padding:70px 10px}.footer{padding:50px 10px}}@media screen and (max-width: 2560px){.header__subtitle{font-weight:500;font-size:calc((1vw + 1vh)*2);line-height:calc((1vw + 1vh)*2.5);letter-spacing:calc((1vw + 1vh)/7)}.header__title{font-weight:500;font-size:calc((1vw + 1vh)*2);line-height:calc((1vw + 1vh)*2.5);letter-spacing:calc((1vw + 1vh)/7)}.work__title{font-weight:500;font-size:calc((1vw + 1vh)*1.6);line-height:calc((1vw + 1vh)*2.1);letter-spacing:calc((1vw + 1vh)/7)}.work__card-title{font-weight:400;font-size:calc((1vw + 1vh)*1.1);line-height:calc((1vw + 1vh)*2.1);letter-spacing:calc((1vw + 1vh)/30)}.work__card-link{font-weight:400;font-size:calc((1vw + 1vh)*1);line-height:calc((1vw + 1vh)*1.2);letter-spacing:calc((1vw + 1vh)/30)}.footer__title{font-weight:400;font-size:calc((1vw + 1vh)*.9);line-height:calc((1vw + 1vh)*1.2);letter-spacing:calc((1vw + 1vh)/30)}.footer__info{font-weight:400;font-size:calc((1vw + 1vh)*.9);line-height:calc((1vw + 1vh)*1.2);letter-spacing:calc((1vw + 1vh)/30)}}@media screen and (max-width: 1023px){.header__subtitle{font-weight:500;font-size:calc((1vw + 1vh)*2.4);line-height:calc((1vw + 1vh)*2.9);letter-spacing:calc((1vw + 1vh)/7)}.header__title{font-weight:500;font-size:calc((1vw + 1vh)*2.4);line-height:calc((1vw + 1vh)*2.9);letter-spacing:calc((1vw + 1vh)/7)}.work__title{font-weight:500;font-size:calc((1vw + 1vh)*2);line-height:calc((1vw + 1vh)*3.2);letter-spacing:calc((1vw + 1vh)/7)}.work__list{grid-template-columns:repeat(1, 1fr)}.work__card-title{font-weight:400;font-size:calc((1vw + 1vh)*1.6);line-height:calc((1vw + 1vh)*2.6);letter-spacing:calc((1vw + 1vh)/30)}.work__card-link{font-weight:400;font-size:calc((1vw + 1vh)*1.5);line-height:calc((1vw + 1vh)*1.7);letter-spacing:calc((1vw + 1vh)/30)}.footer{flex-direction:column}.footer__title{font-weight:400;font-size:calc((1vw + 1vh)*1.3);line-height:calc((1vw + 1vh)*1.7);letter-spacing:calc((1vw + 1vh)/30)}.footer__info{font-weight:400;font-size:calc((1vw + 1vh)*1.3);line-height:calc((1vw + 1vh)*1.7);letter-spacing:calc((1vw + 1vh)/30)}}
