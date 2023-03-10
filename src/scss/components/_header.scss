@@ -27,6 +27,7 @@
 
   &__subtitle {
     @include textOptionsBig(500, 88px, 102px, 5px);
+    text-shadow: 0 0 calc($index / 5) $textShadow;
 
     @media screen and (max-width: 2560px) {
       @include textOptions(500, 2, 2.5, 7);
@@ -38,6 +39,7 @@
 
   &__title {
     @include textOptionsBig(500, 88px, 102px, 5px);
+    text-shadow: 0 0 calc($index / 5) $textShadow;
 
     @media screen and (max-width: 2560px) {
       @include textOptions(500, 2, 2.5, 7);
@@ -58,10 +60,34 @@
     transition: $transition;
   }
 
+  // &__layer-base {
+  //   background-image: url(../../assets/img/base.svg);
+  //   transform: translate3d(0, calc(var(--scrollTop) / 1.6), 0);
+  //   z-index: 0;
+  // }
+
+  // &__layer-middle {
+  //   background-image: url(../../assets/img/middle.svg);
+  //   transform: translate3d(0, calc(var(--scrollTop) / 2.5), 0);
+  //   z-index: 3;
+  // }
+
+  // &__layer-front {
+  //   background-image: url(../../assets/img/front.svg);
+  //   transform: translate3d(0, calc(var(--scrollTop) / 5.7), 0);
+  //   z-index: 5;
+  // }
+
   &__layer-base {
-    background-image: url(../../assets/img/layer-base-min.svg);
+    background-image: url(../../assets/img/base2.svg);
     transform: translate3d(0, calc(var(--scrollTop) / 1.6), 0);
     z-index: 0;
+  }
+
+  &__layer-middle-second {
+    background-image: url(../../assets/img/middle-second.svg);
+    transform: translate3d(0, calc(var(--scrollTop) / 1.6), 0);
+    z-index: 2;
   }
 
   &__layer-middle {
@@ -72,8 +98,19 @@
 
   &__layer-front {
     background-image: url(../../assets/img/layer-front-min.svg);
+    // transform: translate3d(0, calc(var(--scrollTop) / 5.7), 0);
     transform: translate3d(0, calc(var(--scrollTop) / 5.7), 0);
     z-index: 5;
+  }
+
+  &__layer-stars {
+    background-image: url(../../assets/img/58082.svg);
+    // transform: translate3d(0, calc(var(--scrollTop) / 5.7), 0);
+    // scale: 1.1;
+    transform: translate3d(calc(var(--scrollTop) / -12), calc(var(--scrollTop) / 1.3), 0);
+    z-index: 1;
+    background-size: cover;
+    width: 110%;
   }
 }
 
